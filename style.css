@@ -96,13 +96,13 @@ header {
     margin-left: 20px;
 }
 
-/* Services Section - Vertical Layout */
+/* Services Section - Grid Layout */
 .services {
     padding: 60px 20px;
     text-align: center;
 }
 
-.service-item {
+.service-item-left, .service-item-right {
     border: 2px solid #6A8EAE;  /* Light blue border for contrast */
     padding: 20px;
     margin: 20px auto;
@@ -113,16 +113,24 @@ header {
     border-radius: 8px; /* Rounded corners for a modern look */
 }
 
-.service-item h3 {
+.service-item-left h3, .service-item-right h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #6A8EAE; /* Slate Blue for title contrast */
 }
 
-.service-item p {
+.service-item-left p, .service-item-right p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #333;
+}
+
+.service-item-left {
+    text-align: left;  /* Align text to the left */
+}
+
+.service-item-right {
+    text-align: right;  /* Align text to the right */
 }
 
 /* Contact Section */
@@ -142,4 +150,3 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
-
