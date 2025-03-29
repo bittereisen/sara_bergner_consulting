@@ -94,7 +94,7 @@ header {
 /* About Section */
 .about {
     padding: 60px 20px;
-    text-align: center;
+    text-align: left; /* Align all text to the left */
     background-color: #ffffff;
 }
 
@@ -108,7 +108,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Left align content */
     gap: 30px;
     max-width: 1000px;
     margin-left: auto;
@@ -116,7 +116,7 @@ header {
 }
 
 .about-image {
-    width: 200px;
+    width: 150px; /* Reduced image size */
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -127,7 +127,6 @@ header {
     line-height: 1.6;
     margin-top: 20px;
     max-width: 700px;
-    text-align: left;
     color: #555;
 }
 
