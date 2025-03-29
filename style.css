@@ -148,7 +148,7 @@ header {
 .services {
     padding: 60px 20px;
     background-color: #f4f4f4; /* Light Grey */
-    text-align: center;
+    text-align: left;
 }
 
 .services h2 {
