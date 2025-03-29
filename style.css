@@ -55,7 +55,7 @@ header {
 }
 
 .hero-background {
-    background-image: url('growth.jpg');
+    background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -105,7 +105,7 @@ header {
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 30px;
     max-width: 1000px;
     margin: auto;
@@ -116,6 +116,12 @@ header {
     height: 250px;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-text {
@@ -199,3 +205,4 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+
