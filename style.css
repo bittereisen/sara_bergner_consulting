@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #002b45; /* Deep Navy */
+    background-color: #e669a9; /* Deep Navy */
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003e6b; /* Darker Navy */
+    background-color: #12ed24; /* Darker Navy */
     padding: 15px 20px;
 }
 
