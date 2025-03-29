@@ -106,9 +106,9 @@ header {
 
 .about-content {
     display: flex;
-    flex-direction: column; /* Stack image and text */
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Left align content */
     gap: 30px;
     max-width: 1000px;
     margin-left: auto;
@@ -116,30 +116,19 @@ header {
 }
 
 .about-image {
-    width: 250px; /* Increase image size */
-    height: 250px;
+    width: 150px; /* Reduced image size */
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about-text {
-    max-width: 700px;
 }
 
 .about p {
     font-size: 1.2em;
     line-height: 1.6;
     margin-top: 20px;
+    max-width: 700px;
     color: #555; /* Darker gray for better readability */
 }
-
 
 /* Services Section */
 .services {
