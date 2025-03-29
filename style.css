@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa; /* Light gray background for a soft, professional look */
+    background-color: #f4f7fa; /* Light grayish background for a soft, calm feel */
     color: #333;
 }
 
 header {
-    background-color: #5d9bc8; /* Soft light blue background for a calm, professional feel */
+    background-color: #A3D9F1; /* Lighter Blue for a calm, approachable tone */
     color: white;
     text-align: center;
     padding: 60px 0;
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #4e8ab2; /* Slightly darker blue for contrast */
+    background-color: #7EC8E3; /* Slightly darker blue for a nice contrast */
 }
 
 .navbar .logo h1 {
@@ -45,7 +45,7 @@ header {
 
 .hero {
     padding: 80px 20px;
-    background-color: #6aa4d8; /* A warmer, softer blue to make the page feel welcoming */
+    background-color: #A3D9F1; /* Same light blue for consistency */
     color: white;
 }
 
@@ -60,7 +60,7 @@ header {
 
 .cta-btn {
     padding: 10px 20px;
-    background-color: #ff9f1c; /* Warm orange color to provide a strong call-to-action */
+    background-color: #FF9F1C; /* Warm orange for contrast */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -68,7 +68,7 @@ header {
 }
 
 .cta-btn:hover {
-    background-color: #ff8c00; /* Slightly darker shade on hover */
+    background-color: #FF8C00; /* Slightly darker orange on hover */
 }
 
 /* Section Styles */
@@ -104,11 +104,11 @@ section h2 {
 .services .service-item h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #4e8ab2;
+    color: #6A8EAE; /* Slate Blue for contrast in the services section */
 }
 
 footer {
-    background-color: #4e8ab2;
+    background-color: #7EC8E3; /* Slightly darker blue for the footer */
     color: white;
     text-align: center;
     padding: 20px;
@@ -117,4 +117,30 @@ footer {
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+
+/* About Section Styles */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 200px; /* Adjust the image size as needed */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: 20px; /* Added space between the image and text */
 }
