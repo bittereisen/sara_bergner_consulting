@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7fa;
+    background-color: #f4f7fa; /* Light grayish background */
     color: #333;
 }
 
@@ -48,7 +48,7 @@ header {
 
 .cta-btn {
     padding: 12px 24px;
-    background-color: #FF9F1C;
+    background-color: #FF9F1C; /* Warm orange for call to action */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -57,7 +57,7 @@ header {
 }
 
 .cta-btn:hover {
-    background-color: #FF8C00;
+    background-color: #FF8C00; /* Slightly darker orange on hover */
 }
 
 /* Navbar */
@@ -66,7 +66,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #3C9D9B; /* Soft teal */
+    background-color: #003366; /* Navy Blue */
 }
 
 .navbar .logo h1 {
@@ -101,7 +101,7 @@ header {
 .about h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #3C9D9B;
+    color: #003366; /* Navy Blue for heading */
 }
 
 .about-content {
@@ -127,20 +127,20 @@ header {
     line-height: 1.6;
     margin-top: 20px;
     max-width: 700px;
-    color: #555;
+    color: #555; /* Darker gray for better readability */
 }
 
 /* Services Section */
 .services {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background for contrast */
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #3C9D9B;
+    color: #003366; /* Navy Blue */
 }
 
 .service-item {
@@ -161,7 +161,7 @@ header {
 .service-item h3 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #6A8EAE;
+    color: #6A8EAE; /* Slate blue for headings */
 }
 
 .service-item p {
@@ -180,7 +180,7 @@ header {
 .contact h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #3C9D9B;
+    color: #003366; /* Navy Blue */
 }
 
 .contact p {
@@ -190,7 +190,7 @@ header {
 }
 
 footer {
-    background-color: #3C9D9B;
+    background-color: #003366; /* Navy Blue */
     color: white;
     text-align: center;
     padding: 20px;
@@ -200,4 +200,3 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
-
