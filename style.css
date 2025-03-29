@@ -71,40 +71,61 @@ header {
     background-color: #FF8C00; /* Slightly darker orange on hover */
 }
 
-/* Section Styles */
-section {
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 200px; /* Adjust the image size */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: 20px;
+}
+
+/* Services Section - Grid Layout */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     padding: 60px 20px;
-    text-align: center;
 }
 
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.about, .services, .contact {
+.service-item {
     background-color: white;
-    margin-bottom: 40px;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about p, .services p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-top: 20px;
-}
-
-.services .service-item {
-    margin-bottom: 20px;
-}
-
-.services .service-item h3 {
+.service-item h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #6A8EAE; /* Slate Blue for contrast in the services section */
+    color: #6A8EAE; /* Slate Blue for contrast */
+}
+
+.service-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
 }
 
 footer {
@@ -117,30 +138,4 @@ footer {
 footer p {
     margin: 0;
     font-size: 1em;
-}
-
-
-/* About Section Styles */
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.about-image {
-    width: 200px; /* Adjust the image size as needed */
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-top: 20px;
-    max-width: 700px;
-    margin-left: 20px; /* Added space between the image and text */
 }
