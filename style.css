@@ -8,12 +8,55 @@ body {
 }
 
 header {
-    background-color: #A3D9F1; /* Lighter Blue for a calm, approachable tone */
-    color: white;
+    position: relative;
     text-align: center;
     padding: 60px 0;
 }
 
+.hero {
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay for text readability */
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding: 80px 20px;
+}
+
+.hero-background {
+    background-image: url('growing.jpg'); /* Your image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #FF9F1C; /* Warm orange for contrast */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #FF8C00; /* Slightly darker orange on hover */
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -43,35 +86,12 @@ header {
     font-weight: bold;
 }
 
-.hero {
-    padding: 80px 20px;
-    background-color: #A3D9F1; /* Same light blue for consistency */
-    color: white;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.3em;
-    margin: 20px 0;
-}
-
-.cta-btn {
-    padding: 10px 20px;
-    background-color: #FF9F1C; /* Warm orange for contrast */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.cta-btn:hover {
-    background-color: #FF8C00; /* Slightly darker orange on hover */
-}
-
 /* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -96,14 +116,13 @@ header {
     margin-left: 20px;
 }
 
-/* Services Section - Grid Layout */
+/* Services Section */
 .services {
     padding: 60px 20px;
     text-align: center;
 }
 
-.service-item-left, .service-item-right {
-    border: 2px solid #6A8EAE;  /* Light blue border for contrast */
+.service-item {
     padding: 20px;
     margin: 20px auto;
     width: 80%;  /* Ensures it's not too wide */
@@ -113,24 +132,16 @@ header {
     border-radius: 8px; /* Rounded corners for a modern look */
 }
 
-.service-item-left h3, .service-item-right h3 {
+.service-item h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #6A8EAE; /* Slate Blue for title contrast */
 }
 
-.service-item-left p, .service-item-right p {
+.service-item p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #333;
-}
-
-.service-item-left {
-    text-align: left;  /* Align text to the left */
-}
-
-.service-item-right {
-    text-align: right;  /* Align text to the right */
 }
 
 /* Contact Section */
@@ -139,6 +150,7 @@ header {
     text-align: center;
 }
 
+/* Footer */
 footer {
     background-color: #7EC8E3; /* Slightly darker blue for the footer */
     color: white;
@@ -150,3 +162,4 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+
