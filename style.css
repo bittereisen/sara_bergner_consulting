@@ -127,7 +127,7 @@ header {
     margin: 20px auto;
     width: 80%;  /* Ensures it's not too wide */
     max-width: 700px;
-    background-color: transparent;
+    background-color: transparent; /* Removed colored border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border-radius: 8px; /* Rounded corners for a modern look */
 }
@@ -162,4 +162,3 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
-
