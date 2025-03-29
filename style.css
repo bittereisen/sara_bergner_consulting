@@ -52,6 +52,11 @@ header {
     position: relative;
     padding: 100px 20px;
     color: white;
+    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-background {
@@ -63,7 +68,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -1; /* Ensure background image is at the bottom */
+}
+
+.hero-content {
+    z-index: 1; /* Ensure text content is above the background */
 }
 
 .hero-content h2 {
@@ -89,6 +98,7 @@ header {
 .cta-btn:hover {
     background-color: #ff8c00; /* Darker Orange */
 }
+
 
 /* About Section */
 .about {
