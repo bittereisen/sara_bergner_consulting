@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4; /* Light Grey */
     color: #333;
+    box-sizing: border-box; /* Added for better box-sizing control */
 }
 
 /* Navbar */
@@ -12,22 +13,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #12ed24; /* Darker Navy */
-    padding: 15px 20px;
+    background-color: #003e6b; /* Replaced bright green with dark blue */
+    padding: 10px 20px;
 }
 
 .navbar .logo h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
+    color: #fff;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .nav-links a {
@@ -46,7 +49,7 @@ body {
     position: relative;
     padding: 100px 20px;
     color: white;
-    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +57,7 @@ body {
 }
 
 .hero-background {
-    background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
+    background-image: url('growth.jpg'); /* Ensure growth.jpg exists */
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -62,20 +65,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Ensure background image is at the bottom */
+    z-index: -1;
 }
 
 .hero-content {
-    z-index: 1; /* Ensure text content is above the background */
+    z-index: 1;
 }
 
 .hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 2.8em;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 20px 0;
 }
 
@@ -90,19 +93,20 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #ff8c00; /* Darker Orange */
+    background-color: #ff8c00;
 }
 
 /* About Section */
 .about {
     padding: 60px 20px;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #003e6b; /* Dark Navy */
+    color: #003e6b;
 }
 
 .about-content {
@@ -115,8 +119,8 @@ body {
 }
 
 .about-image {
-    width: 250px; /* Larger image size */
-    height: 250px;
+    width: 200px; /* Adjusted image size */
+    height: 200px;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -128,7 +132,8 @@ body {
 }
 
 .about-text {
-    max-width: 650px;
+    max-width: 600px;
+    text-align: left;
 }
 
 .about p {
@@ -140,14 +145,14 @@ body {
 /* Services Section */
 .services {
     padding: 60px 20px;
-    background-color: #f4f4f4; /* Light Grey */
+    background-color: #f4f4f4;
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #003e6b; /* Dark Navy */
+    color: #003e6b;
 }
 
 .services p {
@@ -161,12 +166,12 @@ body {
     background-color: #ffffff;
     padding: 30px;
     margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
+    width: 75%;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    text-align: left; /* Align text to the left inside the service item */
+    text-align: left;
 }
 
 .service-item:hover {
@@ -176,11 +181,11 @@ body {
 .service-item h3 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #003e6b; /* Dark Navy */
+    color: #003e6b;
 }
 
 .service-item p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
     color: #333;
 }
@@ -213,7 +218,7 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #ff8c00; /* Darker Orange */
+    background-color: #ff8c00;
 }
 
 /* Footer */
