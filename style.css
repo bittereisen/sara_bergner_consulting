@@ -148,7 +148,7 @@ body {
 .services {
     padding: 60px 20px;
     background-color: #f4f4f4; /* Light Grey */
-    text-align: left;
+    text-align: center; /* Center the content */
 }
 
 .services h2 {
@@ -183,6 +183,7 @@ body {
     line-height: 1.6;
     color: #333;
 }
+
 
 /* Contact Section */
 .contact {
