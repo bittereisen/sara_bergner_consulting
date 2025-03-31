@@ -122,8 +122,8 @@ body {
     position: relative;
     padding: 60px 20px; /* Reduced padding to lessen the section height */
     color: white;
-    height: auto; /* Let the height be determined by the content, not the image */
-    max-height: 500px; /* Limit the maximum height */
+    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    max-height: 600px; /* Set a max height for larger screens */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ body {
 
 .hero-background {
     background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
-    background-size: cover; /* Make sure the image covers the section without stretching */
+    background-size: cover; /* Ensure the image covers the section without stretching */
     background-position: center; /* Center the image */
     position: absolute;
     top: 0;
@@ -142,6 +142,8 @@ body {
     z-index: -1; /* Ensure background image is at the bottom */
     opacity: 0.7; /* Optional: Add some transparency to make text more readable */
 }
+
+/* Optionally, you can use background-size: contain if you don't want it to cover the whole section */
 
 .hero-content {
     z-index: 1; /* Ensure text content is above the background */

@@ -88,12 +88,15 @@
 
     <script>
         // Toggle the navigation menu
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-    
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
-        });
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    console.log("Hamburger clicked!"); // Debugging line to see if click works
+    navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+});
+
+        
     </script>
     
 </body>
