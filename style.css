@@ -9,28 +9,27 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003e6b; /* dark blue */
-    padding: 10px 20px;
+    background-color: #003e6b; /* Dark Navy */
+    padding: 15px 20px;
 }
 
 .navbar .logo h1 {
     margin: 0;
-    font-size: 2em;
-    color: #fff;
+    font-size: 1.8em; /* Adjusted size for smaller text */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -44,7 +43,6 @@ body {
     color: #ff9f1c; /* Orange */
 }
 
-/* Hero Section */
 /* Hero Section */
 .hero {
     position: relative;
