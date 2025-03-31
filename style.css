@@ -153,13 +153,16 @@ body {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow */
 }
 
 .hero-content p {
     font-size: 1.5em;
     margin: 20px 0;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow */
 }
+
 
 
 /* About Section */
