@@ -188,17 +188,20 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 2.5em;
+    font-size: 3em; /* Larger font size */
     margin-bottom: 20px;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow */
+    color: #ff9f1c; /* Orange color for a bold look */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow for contrast */
+    letter-spacing: 1px; /* Add letter spacing for a more dynamic look */
+    font-weight: bold; /* Make text bold for emphasis */
 }
 
+/* Subheading */
 .hero-content p {
     font-size: 1.5em;
     margin: 20px 0;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add shadow */
+    color: #fff; /* White text for contrast against the background */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Soft shadow to make text stand out */
 }
 
 
