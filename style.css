@@ -118,11 +118,13 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     position: relative;
-    padding: 100px 20px;
+    padding: 60px 20px; /* Reduced padding to lessen the section height */
     color: white;
-    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    height: auto; /* Let the height be determined by the content, not the image */
+    max-height: 500px; /* Limit the maximum height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,14 +133,15 @@ body {
 
 .hero-background {
     background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Make sure the image covers the section without stretching */
+    background-position: center; /* Center the image */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1; /* Ensure background image is at the bottom */
+    opacity: 0.7; /* Optional: Add some transparency to make text more readable */
 }
 
 .hero-content {
@@ -146,16 +149,17 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: white; /* Make sure h2 text is white */
+    color: white;
 }
 
 .hero-content p {
     font-size: 1.5em;
     margin: 20px 0;
-    color: white; /* Make sure paragraph text is white */
+    color: white;
 }
+
 
 /* About Section */
 .about {
