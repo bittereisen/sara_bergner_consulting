@@ -7,12 +7,12 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #e669a9; /* Deep Navy */
+/*header {
+    background-color: #e669a9; 
     color: white;
     padding: 60px 20px;
     text-align: center;
-}
+}*/
 
 .navbar {
     display: flex;
