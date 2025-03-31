@@ -8,7 +8,6 @@ body {
     box-sizing: border-box; /* Added for better box-sizing control */
 }
 
-
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -42,6 +41,80 @@ body {
 
 .nav-links a:hover {
     color: #ff9f1c; /* Orange */
+}
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003e6b; /* Dark Navy */
+    padding: 15px 20px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: white; /* Ensures logo text is white */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white; /* Ensure text is white for navbar links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    color: #ff9f1c; /* Orange */
+}
+
+/* Hamburger Menu (hidden on larger screens) */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #003e6b; /* Dark Navy */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust space between links */
+        text-align: center;
+    }
+
+    /* Show Hamburger icon on mobile */
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Toggle the navigation links when hamburger is clicked */
+.nav-links.active {
+    display: flex; /* Show nav links when active class is added */
 }
 
 /* Hero Section */
@@ -83,7 +156,6 @@ body {
     margin: 20px 0;
     color: white; /* Make sure paragraph text is white */
 }
-
 
 /* About Section */
 .about {
@@ -258,14 +330,3 @@ footer p {
     .about-content {
         flex-direction: column;
         align-items: center;
-    }
-
-    .service-item {
-        width: 90%;
-    }
-
-    .cta-btn {
-        padding: 12px 24px;
-        font-size: 1.2em;
-    }
-}

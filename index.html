@@ -18,7 +18,11 @@
             <div class="logo">
                 <h1>Bergner Business Consulting</h1>
             </div>
-            <ul class="nav-links">
+            <!-- Hamburger Icon (hidden on large screens) -->
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- This is the hamburger icon (three horizontal lines) -->
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -81,7 +85,17 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        // Toggle the navigation menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+        });
+    </script>
+    
 </body>
 
 </html>
-
