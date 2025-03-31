@@ -7,22 +7,24 @@ body {
     color: #333;
 }
 
-/* Navbar */
+/*header {
+    background-color: #e669a9; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003e6b; /* Dark Navy */
-    padding: 20px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #12ed24; /* Darker Navy */
+    padding: 15px 20px;
 }
 
 .navbar .logo h1 {
-    color: white;
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .nav-links {
@@ -31,7 +33,7 @@ body {
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -39,48 +41,130 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
-    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ff9f1c; /* Orange */
 }
 
-/* Main Section for Services */
-.services {
-    padding: 60px 20px;
-    background-color: #ffffff; /* White Background */
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    color: white;
+    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+.hero-background {
+    background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure background image is at the bottom */
 }
 
-.services h2 {
-    font-size: 2.8em;
+.hero-content {
+    z-index: 1; /* Ensure text content is above the background */
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    background-color: #ff9f1c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff8c00; /* Darker Orange */
+}
+
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #003e6b; /* Dark Navy */
 }
 
-.services p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 40px;
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Service Item Styling */
+.about-image {
+    width: 250px; /* Larger image size */
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #f4f4f4; /* Light Grey */
+    text-align: left;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #003e6b; /* Dark Navy */
+}
+
 .service-item {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     margin: 20px auto;
     width: 80%;
-    max-width: 700px;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -89,47 +173,18 @@ body {
 }
 
 .service-item h3 {
-    font-size: 2.2em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 15px;
     color: #003e6b; /* Dark Navy */
 }
 
 .service-item p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.2em;
     line-height: 1.6;
+    color: #333;
 }
 
-/* Footer */
-footer {
-    background-color: #003e6b; /* Dark Navy */
-    color: white;
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
-
-/* Add smooth transitions */
-.service-item, .navbar a {
-    transition: all 0.3s ease;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-item {
-        width: 90%;
-    }
-}
-
