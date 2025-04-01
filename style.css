@@ -4,32 +4,63 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4; /* Light Grey */
+color: #333;
+    box-sizing: border-box; /* Added for better box-sizing control */
     box-sizing: border-box;
 }
 
 /* Navbar Styles */
+@@ -20,20 +24,21 @@ body {
+.navbar .logo h1 {
+margin: 0;
+font-size: 2em;
+    color: white; /* Ensures logo text is white */
+    color: white;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+margin-right: 20px;
+}
+
+.nav-links a {
+    color: white; /* Ensure text is white for navbar links */
+    color: white;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1em;
+@@ -43,109 +48,82 @@ body {
+color: #ff9f1c; /* Orange */
+}
+
+/* General Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003e6b;
+    background-color: #003e6b; /* Dark Navy */
     padding: 15px 20px;
 }
 
 .navbar .logo h1 {
     margin: 0;
     font-size: 2em;
-    color: white;
+    color: white; /* Ensures logo text is white */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 .nav-links li {
@@ -37,16 +68,14 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: white; /* Ensure text is white for navbar links */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .nav-links a:hover {
-    color: #ff9f1c;
-}
-
+    color: #ff9f1c; /* Orange */
 .nav-links.active {
     display: block !important;
     position: absolute;
@@ -59,79 +88,153 @@ body {
     padding: 20px;
 }
 
+/* Hamburger Menu (hidden on larger screens) */
+/* Hamburger Menu */
 .hamburger {
-    display: none;
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
+display: none;
+font-size: 2em;
+color: white;
+cursor: pointer;
+    position: fixed; /* Position it fixed to the screen */
+    top: 20px; /* Adjust the top spacing */
+    right: 20px; /* Move it to the right side */
+    z-index: 100; /* Ensure it's above other content */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Add the active class styles for mobile menu */
+.nav-links.active {
+    display: flex !important; /* Display the nav links when the hamburger is clicked */
+    display: flex !important;
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+.nav-links {
+        display: none; /* Initially hide the nav links on mobile */
         display: none;
-        flex-direction: column;
-        width: 100%;
+flex-direction: column;
+width: 100%;
+        background-color: #003e6b; /* Dark Navy */
         background-color: #003e6b;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        padding: 10px 0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
+position: absolute;
+top: 70px;
+left: 0;
+padding: 10px 0;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-    .hamburger {
-        display: block;
-    }
+    /* Show Hamburger icon on mobile */
+.hamburger {
+display: block;
+}
 
-    .nav-links.active {
-        display: flex !important;
-    }
-
-    .nav-links li {
+.nav-links li {
+        margin: 10px 0; /* Adjust space between links */
         margin: 10px 0;
+text-align: center;
+}
+}
+
+    .navbar {
+        flex-direction: column;
         text-align: center;
     }
-}
 
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 60px 20px;
+    padding: 60px 20px; /* Reduced padding to lessen the section height */
     color: white;
-    height: 100vh;
-    max-height: 600px;
+    height: 100vh; /* Ensure the hero section takes up the full screen height */
+    max-height: 600px; /* Set a max height for larger screens */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+    .navbar .logo h1 {
+        font-size: 1.6em;
+    }
 
 .hero-background {
-    background-image: url('growth.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
+    background-size: cover; /* Ensure the image covers the section without stretching */
+    background-position: center; /* Center the image */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
-    opacity: 0.7;
+    z-index: -1; /* Ensure background image is at the bottom */
+    opacity: 0.7; /* Optional: Add some transparency to make text more readable */
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Hero Section */
+@@ -163,7 +141,7 @@ body {
+
+.hero-background {
+background-image: url('growth.jpg');
+    background-size: cover; /* Default to cover the whole hero section */
+    background-size: cover;
+background-position: center;
+position: absolute;
+top: 0;
+@@ -174,37 +152,46 @@ body {
+opacity: 0.7;
+}
+
+/* Adjust background for smaller screens */
+@media (max-width: 768px) {
+    .hero-background {
+        background-size: contain; /* Make sure it fits on smaller screens without stretching */
+        background-position: center center;
+    }
+}
+
+
+.hero-content {
+    z-index: 1; /* Ensure text content is above the background */
+    z-index: 1;
 }
 
 .hero-content h2 {
+    font-size: 3em; /* Larger font size */
     font-size: 3em;
-    margin-bottom: 20px;
-    color: #ffffff;
+margin-bottom: 20px;
+    color: #ffffff; 
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow for contrast */
+    letter-spacing: 1px; /* Add letter spacing for a more dynamic look */
+    font-weight: bold; /* Make text bold for emphasis */
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
     font-weight: bold;
 }
 
+/* Subheading */
 .hero-content p {
-    font-size: 1.5em;
-    margin: 20px 0;
-    color: #fff;
+font-size: 1.5em;
+margin: 20px 0;
+    color: #fff; /* White text for contrast against the background */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Soft shadow to make text stand out */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -139,95 +242,75 @@ body {
 .sara-container {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
 }
 
 .sara-image {
-    flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .sara-image img {
     width: 150px;
     height: auto;
-    border-radius: 50%;
 }
 
 .about-sara {
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .about-sara h2 {
     margin-top: 0;
 }
 
-.about-sara p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #333;
+/* About Section */
+.about {
+@@ -229,7 +216,7 @@ body {
 }
 
-/* Services Section */
-.services {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #003e6b;
-}
-
-.services p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-/* Contact Section */
-.contact {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.cta-btn {
-    padding: 12px 24px;
-    background-color: #ff9f1c;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #ff8c00;
-}
-
-/* Footer */
-footer {
-    background-color: #003e6b;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+.about-image {
+    width: 200px; /* Adjusted image size */
+    width: 200px;
+height: 200px;
+border-radius: 50%;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@@ -342,41 +329,3 @@ footer {
 footer p {
-    margin: 0;
+margin: 0;
 }
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 15px; /* Added some space between logo and links */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 1.6em; /* Smaller logo text on mobile */
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
