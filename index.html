@@ -1,101 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bergner Business Consulting</title>
-
-    <!-- Link to Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Replace with your favicon file -->
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Bergner's Business Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Bergner Business Consulting</h1>
-            </div>
-            <!-- Hamburger Icon (hidden on large screens) -->
-            <div class="hamburger" id="hamburger">
-                &#9776; <!-- This is the hamburger icon (three horizontal lines) -->
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <h2>Your Trusted Partner for Small Business Growth</h2>
-            <p>Helping you succeed with tailored strategies, honest advice, and a deep understanding of your business.</p>
-            <br><br>
-            <a href="#contact" class="cta-btn">Get In Touch</a>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Sara Bergner</h1>
     </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div> <!-- Hamburger Icon -->
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h2>Grow Your Business with Expert Solutions</h2>
+      <p>Helping small businesses thrive with personalized strategies</p>
+    </div>
+  </section>
+
+  <!-- About Sara Section -->
+  <section class="about-sara" id="about">
     <div class="sara-container">
-        <div class="sara-image">
-          <img src="sara-picture.jpg" alt="Sara Bergner" />
-        </div>
-        <div class="about-sara">
-          <h2>About Sara Bergner</h2>
-          <p>Sara specializes in helping small businesses grow and thrive by offering personalized strategies and solutions. Currently offering free consultations to build her practice, Sara is committed to helping your team succeed at no cost to you.</p>
-          <p>Sara speaks with all employees and learns each person's role to understand the company better and provide the most effective solutions. Known for her honesty and fairness, Sara has a proven track record of improving business operations and increasing revenue.</p>
-        </div>
+      <div class="sara-image">
+        <img src="sara.jpg" alt="Sara Bergner"> <!-- Ensure the image exists -->
       </div>
-      
+      <div class="about-sara">
+        <h2>About Sara Bergner</h2>
+        <p>Sara specializes in helping small businesses grow and thrive by offering personalized strategies and solutions. Currently offering free consultations to build her practice, Sara is committed to helping your team succeed at no cost to you.</p>
+        <p>Sara speaks with all employees and learns each person's role to understand the company better and provide the most effective solutions. Known for her honesty and fairness, Sara has a proven track record of improving business operations and increasing revenue.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="service-item">
-            <h3>Business Strategy</h3>
-            <p><strong>Sara is offering free business strategy consultations</strong> to help streamline your operations and maximize growth potential.
-                <br><br>Together, you will create a tailored plan that aligns with your business’s vision for the future—all at no cost to you.</p>
-        </div>
-        <div class="service-item">
-            <h3>Team Engagement</h3>
-            <p>As part of her commitment to helping small businesses thrive, Sara provides <strong>free team engagement sessions</strong>.
-                <br><br>By speaking with every team member and understanding each person’s role, she helps create an environment of collaboration and innovation, empowering your team to drive business growth.</p>
-        </div>
-        <div class="service-item">
-            <h3>Thorough Business Review</h3>
-            <p><strong>Sara is offering a free, comprehensive business review</strong>, assessing every aspect of your operations and identifying key areas for improvement.
-                <br><br>With actionable insights and strategies, your business will be positioned for long-term success.</p>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <p>Offering tailored business solutions to help your company grow</p>
+    <!-- Add service items here -->
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to get started? Reach out for a free consultation today.</p>
-        <br>
-        <a href="mailto:info@sarabergnerconsulting.com" class="cta-btn">Email Us</a>
-    </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Get in touch with us today!</p>
+    <a href="mailto:sara@example.com" class="cta-btn">Contact Sara</a>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Bergner Business Consulting. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sara Bergner. All rights reserved.</p>
+  </footer>
 
-    <script src="script.js"></script>
-
-    <script>
-        // Toggle the navigation menu
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
-    console.log("Hamburger clicked!"); // Debugging line to see if click works
-    navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
-});
-
-    </script>
-    
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+  
 </body>
 </html>
