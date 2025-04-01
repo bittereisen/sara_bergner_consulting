@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bergner Business Consulting</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Bergner Business Consulting</h1>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="SaraBergner.png" alt="Sara Bergner">
+            </div>
+            <div class="about-text">
+                <h2>About Sara</h2>
+                <p>Sara's hands-on approach to business consulting has made her a trusted partner for many small businesses. Her commitment to providing honest, transparent feedback sets her apart. Sara has worked across several sectors, including healthcare, retail, and marketing, allowing her to bring a wide range of experience to every consulting project.</p>
+                <p>Her method involves engaging directly with each team member to understand their unique role and challenges. This approach helps Sara provide tailored advice that drives real, lasting change. Known for her integrity and work ethic, Sara is dedicated to helping businesses grow through strategic planning, team engagement, and a focus on long-term success.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bergner Business Consulting. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
