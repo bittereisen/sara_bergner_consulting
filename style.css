@@ -190,7 +190,7 @@ body {
 .hero-content h2 {
     font-size: 3em; /* Larger font size */
     margin-bottom: 20px;
-    color: #ff9f1c; /* Orange color for a bold look */
+    color: #ffffff; 
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow for contrast */
     letter-spacing: 1px; /* Add letter spacing for a more dynamic look */
     font-weight: bold; /* Make text bold for emphasis */
