@@ -4,45 +4,15 @@ html {
 }
 
 body {
-font-family: 'Arial', sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4; /* Light Grey */
-color: #333;
-    box-sizing: border-box; /* Added for better box-sizing control */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Grey */
+    color: #333;
     box-sizing: border-box;
 }
 
 /* Navbar Styles */
-@@ -20,20 +24,21 @@ body {
-.navbar .logo h1 {
-margin: 0;
-font-size: 2em;
-    color: white; /* Ensures logo text is white */
-    color: white;
-}
-
-.nav-links {
-list-style: none;
-display: flex;
-    margin: 0;
-}
-
-.nav-links li {
-margin-right: 20px;
-}
-
-.nav-links a {
-    color: white; /* Ensure text is white for navbar links */
-    color: white;
-text-decoration: none;
-font-weight: bold;
-font-size: 1.1em;
-@@ -43,109 +48,82 @@ body {
-color: #ff9f1c; /* Orange */
-}
-
-/* General Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -54,7 +24,7 @@ color: #ff9f1c; /* Orange */
 .navbar .logo h1 {
     margin: 0;
     font-size: 2em;
-    color: white; /* Ensures logo text is white */
+    color: white;
 }
 
 .nav-links {
@@ -68,7 +38,7 @@ color: #ff9f1c; /* Orange */
 }
 
 .nav-links a {
-    color: white; /* Ensure text is white for navbar links */
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -76,6 +46,8 @@ color: #ff9f1c; /* Orange */
 
 .nav-links a:hover {
     color: #ff9f1c; /* Orange */
+}
+
 .nav-links.active {
     display: block !important;
     position: absolute;
@@ -88,17 +60,12 @@ color: #ff9f1c; /* Orange */
     padding: 20px;
 }
 
-/* Hamburger Menu (hidden on larger screens) */
 /* Hamburger Menu */
 .hamburger {
-display: none;
-font-size: 2em;
-color: white;
-cursor: pointer;
-    position: fixed; /* Position it fixed to the screen */
-    top: 20px; /* Adjust the top spacing */
-    right: 20px; /* Move it to the right side */
-    z-index: 100; /* Ensure it's above other content */
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -107,69 +74,40 @@ cursor: pointer;
 
 /* Add the active class styles for mobile menu */
 .nav-links.active {
-    display: flex !important; /* Display the nav links when the hamburger is clicked */
     display: flex !important;
 }
 
 @media (max-width: 768px) {
-.nav-links {
-        display: none; /* Initially hide the nav links on mobile */
+    .nav-links {
         display: none;
-flex-direction: column;
-width: 100%;
-        background-color: #003e6b; /* Dark Navy */
+        flex-direction: column;
+        width: 100%;
         background-color: #003e6b;
-position: absolute;
-top: 70px;
-left: 0;
-padding: 10px 0;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 
-    /* Show Hamburger icon on mobile */
-.hamburger {
-display: block;
-}
+    .hamburger {
+        display: block;
+    }
 
-.nav-links li {
-        margin: 10px 0; /* Adjust space between links */
+    .nav-links li {
         margin: 10px 0;
-text-align: center;
-}
-}
+        text-align: center;
+    }
 
     .navbar {
         flex-direction: column;
         text-align: center;
     }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    padding: 60px 20px; /* Reduced padding to lessen the section height */
-    color: white;
-    height: 100vh; /* Ensure the hero section takes up the full screen height */
-    max-height: 600px; /* Set a max height for larger screens */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
     .navbar .logo h1 {
         font-size: 1.6em;
     }
 
-.hero-background {
-    background-image: url('growth.jpg'); /* Ensure growth.jpg exists in your project folder */
-    background-size: cover; /* Ensure the image covers the section without stretching */
-    background-position: center; /* Center the image */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* Ensure background image is at the bottom */
-    opacity: 0.7; /* Optional: Add some transparency to make text more readable */
     .hero {
         padding: 80px 20px;
     }
@@ -189,52 +127,46 @@ text-align: center;
 }
 
 /* Hero Section */
-@@ -163,7 +141,7 @@ body {
+.hero {
+    position: relative;
+    padding: 60px 20px;
+    color: white;
+    height: 100vh;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .hero-background {
-background-image: url('growth.jpg');
-    background-size: cover; /* Default to cover the whole hero section */
+    background-image: url('growth.jpg');
     background-size: cover;
-background-position: center;
-position: absolute;
-top: 0;
-@@ -174,37 +152,46 @@ body {
-opacity: 0.7;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.7;
 }
-
-/* Adjust background for smaller screens */
-@media (max-width: 768px) {
-    .hero-background {
-        background-size: contain; /* Make sure it fits on smaller screens without stretching */
-        background-position: center center;
-    }
-}
-
 
 .hero-content {
-    z-index: 1; /* Ensure text content is above the background */
     z-index: 1;
 }
 
 .hero-content h2 {
-    font-size: 3em; /* Larger font size */
     font-size: 3em;
-margin-bottom: 20px;
-    color: #ffffff; 
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow for contrast */
-    letter-spacing: 1px; /* Add letter spacing for a more dynamic look */
-    font-weight: bold; /* Make text bold for emphasis */
+    margin-bottom: 20px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
     letter-spacing: 1px;
     font-weight: bold;
 }
 
-/* Subheading */
 .hero-content p {
-font-size: 1.5em;
-margin: 20px 0;
-    color: #fff; /* White text for contrast against the background */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Soft shadow to make text stand out */
+    font-size: 1.5em;
+    margin: 20px 0;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -263,54 +195,137 @@ margin: 20px 0;
 
 /* About Section */
 .about {
-@@ -229,7 +216,7 @@ body {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003e6b;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .about-image {
-    width: 200px; /* Adjusted image size */
     width: 200px;
-height: 200px;
-border-radius: 50%;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-@@ -342,41 +329,3 @@ footer {
-footer p {
-margin: 0;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile and Tablet Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .nav-links {
-        flex-direction: column;
-        padding: 0;
-        margin-top: 15px; /* Added some space between logo and links */
-    }
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
 
-    .nav-links li {
-        margin-bottom: 10px;
-    }
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
 
-    .navbar .logo h1 {
-        font-size: 1.6em; /* Smaller logo text on mobile */
-    }
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
 
-    .hero {
-        padding: 80px 20px;
-    }
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #003e6b;
+}
 
-    .hero-content h2 {
-        font-size: 2.5em;
-    }
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
 
-    .hero-content p {
-        font-size: 1.2em;
-    }
+/* Service Items */
+.service-item {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 75%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
 
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #003e6b;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    background-color: #ff9f1c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff8c00;
+}
+
+/* Footer */
+footer {
+    background-color: #003e6b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
